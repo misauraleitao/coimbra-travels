@@ -2,7 +2,7 @@
 
 
 Coimbra Travels is a fully responsive application targeting Coimbra city travellers allowing them to view and create posts of various places in the city.
-This application will be useful to the users as they can plan their itinerary to their liking, and/or they can places that they have visited that are not yet listed in the app so that other users can also plan ahead.
+This application will be useful to the users as they can plan their itinerary to their liking, and/or they can add places that they have visited that are not yet listed in the app so that other users can also plan ahead.
 
 
 
