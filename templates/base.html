@@ -6,13 +6,44 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
         integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA==" crossorigin="anonymous" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" type="text/css">
     {% block styles %}
     {% endblock %}
     <title>Coimbra Travels</title>
-
 </head>
 <body>
+     <header>
+         <!--Top Navbar-->
+        <nav class="text-shadow  deep-purple darken-2">
+            <div class="nav-wrapper">
+              <a href="{{ url_for('get_places') }}" class="brand-logo yellow-text darken-4">Coimbra Travels</a>
+              <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="{{ url_for('get_places') }}">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Add Place</a></li>
+                <li><a href="#">Register</a></li>
+                <li><a href="#">Log Out</a></li>
+                <li><a href="#">Log In</a></li>
+                
+              </ul>
+            </div>
+          </nav>
+        
+          <!--mobile side-nav-->
+          <ul class="sidenav" id="mobile-demo">
+            <li><h4 class="center align yellow-text darken-4">Coimbra Travels</h4></li>
+            <li><a href="{{ url_for('get_places') }}">Home</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Add Place</a></li>
+            <li><a href="#">Register</a></li>
+            <li><a href="#">Log Out</a></li>
+            <li><a href="#">Log In</a></li>
+          </ul>
+     </header>
 
     {% block content %}
     {% endblock %}
