@@ -21,3 +21,8 @@ body{
     top: 600px;
     left: 16px;
   }
+
+.flashes h4 {
+    line-height: 2;
+    color: white;
+}
