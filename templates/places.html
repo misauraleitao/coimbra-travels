@@ -1,11 +1,17 @@
 {% extends "base.html" %}
 {% block content %}
 
-<div id="hero">
-    <video playsinline autoplay muted loop width="100%">
-    <source src="static/video/hero-vid.mp4" type="video/mp4">
-    </video>
+    <div id="hero">
+        <video playsinline autoplay muted loop width="100%">
+            <source src="static/video/hero-vid.mp4" type="video/mp4">
+        </video>
     </div>
+    <div class="top-left">
+        <h3>Welcome to Coimbra Travels</h3>
+        <a class="deep-purple darken-2 btn-large">Sign up Today</a>
+    </div>
+
+
 
     
     {% for place in places %}
