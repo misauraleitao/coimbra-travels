@@ -3,20 +3,23 @@
 }
 
 .brand-logo {
-    font-family: 'Aclonica', sans-serif;
+    font-family: 'Scheherazade New', serif;
 }
 
 h3 {
-    font-family: 'Aclonica' , sans-serif;
+    font-family: 'Scheherazade New', serif;
     color: white;
-    
 }
+
+h4{
+    font-family: 'Scheherazade New', serif;  
+}
+
 body{
-    background-image: url("/static/images/content-imgs/LbLizqd.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-color: #212121;
 }
+
+
 
 
 .top-left {
