@@ -27,3 +27,10 @@ body{
     color: white;
 }
 
+.one div {
+    background-image: url(../static/images/content-imgs/jardim-da-sereia.jpg);
+}
+
+.slider img{
+    filter: brightness(0.4) contrast(0.5) grayscale(1) opacity(0.9) saturate(3);
+  }
