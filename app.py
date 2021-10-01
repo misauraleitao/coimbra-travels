@@ -93,6 +93,9 @@ def logout():
     return redirect(url_for("login"))
 
 
+@app.route("/add_places")
+def add_places():
+    return render_template("add_places.html")
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),

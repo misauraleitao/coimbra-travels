@@ -2,17 +2,20 @@
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
-.yellow-text {
+.brand-logo {
     font-family: 'Aclonica', sans-serif;
 }
 
 h3 {
     font-family: 'Aclonica' , sans-serif;
-    color: yellow;
+    color: white;
+    
 }
-
 body{
-    background-color: thistle;
+    background-image: url("/static/images/content-imgs/LbLizqd.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 
@@ -32,6 +35,6 @@ body{
 }
 
 .slider img{
-    filter: brightness(0.4) contrast(0.5) grayscale(1) opacity(0.9) saturate(3);
+    filter: brightness(0.6) grayscale(1) saturate(3) contrast(1.1);
   }
 
