@@ -1,15 +1,15 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h3 class="center-align">Become a Member</h3>
+<h3 class="center-align">Log In</h3>
 
 <div class="row">
-    <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('register') }}">
+    <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('login') }}">
         <div class="card-panel">
             <div class="row">
                 <div class="input-field col s12">
-                    <i class="fas fa-user-plus prefix deep-purple-text darken-2"></i>
-                    <input id="username" placeholder="Any letters a-z or 0-9 numbers" name="username"
+                    <i class="fas fa-user-cog prefix deep-purple-text darken-2"></i>
+                    <input id="username" placeholder="Enter Your Username Here" name="username"
                         minlength="5" maxlength="15" type="text" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
                     <label for="username">Username</label>
                 </div>
@@ -17,13 +17,13 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-user-lock prefix deep-purple-text darken-2"></i>
-                    <input id="password" name="password" type="password" placeholder="Any letters a-z or 0-9 numbers" 
+                    <input id="password" name="password" type="password" placeholder="Enter Your Password Here" 
                         minlength="5" maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
                     <label for="password">Password</label>
                 </div>
             </div>
             <div class="row">
-                <button type="submit" class="col s12 deep-purple darken-2 btn-large">Register</button>
+                <button type="submit" class="col s12 deep-purple darken-2 btn-large">Log In</button>
             </div>
         </div>
     </form>
@@ -31,8 +31,8 @@
 
 <div class="row">
     <div class="col s12">
-       <p class="center-align white-text">Already Registered? 
-           <a href="{{ url_for('login') }}" class="light-blue-text text-darken-4">Log In Here</a></p>
+       <p class="center-align white-text">New Here? 
+           <a href="{{ url_for('register') }}" class="light-blue-text text-darken-4">Register Here</a></p>
     </div>
 </div>
 
