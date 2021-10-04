@@ -93,8 +93,21 @@ def logout():
     return redirect(url_for("login"))
 
 
-@app.route("/add_places")
+@app.route("/add_places", methods=["GET", "POST"])
 def add_places():
+    place = {
+        "category_name": request.form.get("category_name"),
+        "location": request.form.get("location"),
+        "image_url": request.form.get("image_url"),
+        "description": request.form.get("description"),
+        "place_name": request.form.get("place_name"),
+        "date": request.form.get("date"),
+        "created_by": session["user"]
+    }
+    if request.method == "POST":
+        mongo.db.places.insert_one(place)
+        flash("Place Successfully Added")
+        return redirect(url_for("get_places"))
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("add_places.html", categories=categories)
 

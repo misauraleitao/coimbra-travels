@@ -4,7 +4,8 @@
 <h3 class="center-align">Add Places</h3>
 
 <div class="row">
-    <form class="col s12 white" method="POST" action="">
+    <form class="col s12 white" method="POST" action="{{ url_for('add_places') }}">
+        <!--Category selector-->
         <div class="row">
             <div class="input-field col s12">
                 <i class="fa fa-list prefix grey-text-darken-4 "></i>
@@ -17,6 +18,7 @@
                 <label for="category_name"></label>
               </div>
         </div>
+        <!--Place Name-->
         <div class="row">
             <div class="input-field col s12">
                 <i class="fa fa-building prefix grey-text-darken-4"></i>
@@ -25,6 +27,7 @@
                 <label for="place_name">Name of Place</label>
             </div>
         </div>
+        <!--Place Description-->
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-align-left prefix grey-text-darken-4 "></i>
@@ -33,6 +36,7 @@
                 <label for="description">Description of the place</label>
             </div>
         </div>
+        <!--Location input-->
         <div class="row">
             <div class="input-field col s12">
                 <i class="fa fa-map-marker prefix grey-text-darken-4 "></i>
@@ -41,6 +45,7 @@
                 <label for="location">Location/Street Name</label>
             </div>
         </div>
+        <!--Image Url input-->
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-images prefix grey-text-darken-4 "></i>
@@ -49,12 +54,19 @@
                <label for="image_url">Copy/Paste Image URL</label>
             </div>
          </div>
+         <!--date picker-->
          <div class="row">
             <div class="input-field col s12">
                 <i class="fa fa-calendar-alt prefix grey-text-darken-4"></i>
                 <input id="date" name="date" type="text" class="datepicker validate"
                     required>
                 <label for="date">Date</label>
+            </div>
+        </div>
+        <!--Submit Button-->
+        <div class="row">
+            <div class="col s12 center-align">
+                <button type="submit" class="btn-large black">Add Place</button>
             </div>
         </div>
     </form>
