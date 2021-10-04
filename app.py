@@ -127,7 +127,15 @@ def edit_place(place_id):
         flash("Place Successfully Updated")
     place = mongo.db.places.find_one({"_id": ObjectId(place_id)})    
     categories = mongo.db.categories.find().sort("category_name", 1)
-    return render_template("edit_place.html", place=place, categories=categories)
+    return render_template(
+        "edit_place.html", place=place, categories=categories)
+
+
+@app.route("/delete_place/<place_id>")
+def delete_place(place_id):
+    mongo.db.places.remove({"_id": ObjectId(place_id)})
+    flash("Place Successfully Deleted")
+    return redirect(url_for("get_places"))
 
 
 if __name__ == "__main__":
