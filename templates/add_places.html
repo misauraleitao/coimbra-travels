@@ -8,13 +8,13 @@
         <div class="row">
             <div class="input-field col s12">
                 <i class="fa fa-list prefix grey-text-darken-4 "></i>
-                <select multiple>
+                <select id="category_name" name="category_name" class="validate" required multiple>
                   <option value="" disabled selected>Choose place's category</option>
-                  <option value="1">Museums</option>
-                  <option value="2">Architecture</option>
-                  <option value="3">Swim</option>
-                  <option value="3">Parks/Gardens</option>
+                  {% for category in categories %}
+                  <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                  {% endfor %}
                 </select>
+                <label for="category_name"></label>
               </div>
         </div>
         <div class="row">
