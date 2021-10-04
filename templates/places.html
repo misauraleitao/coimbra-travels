@@ -4,28 +4,28 @@
 <div class="slider">
   <ul class="slides">
     <li>
-      <img src="static/images/content-imgs/hero-img-1.jpg"> <!-- random image -->
+      <img src="static/images/content-imgs/hero-img-1.jpg"> <!-- image -->
       <div class="caption center-align">
         <h3>Welcome to Coimbra Travels!</h3>
         <h5 class="light grey-text text-lighten-3">Here you can find culture.</h5>
       </div>
     </li>
     <li>
-      <img src="static/images/content-imgs/hero-img-2.jpg"> <!-- random image -->
+      <img src="static/images/content-imgs/hero-img-2.jpg"> <!-- image -->
       <div class="caption left-align">
         <h3>Welcome to Coimbra Travels!</h3>
         <h5 class="light grey-text text-lighten-3">Make us your pocket guide.</h5>
       </div>
     </li>
     <li>
-      <img src="static/images/content-imgs/hero-img-3.jpg"> <!-- random image -->
+      <img src="static/images/content-imgs/hero-img-3.jpg"> <!-- image -->
       <div class="caption right-align">
         <h3>Welcome to Coimbra Travels!</h3>
         <h5 class="light grey-text text-lighten-3">Share your own Coimbra hidden spots.</h5>
       </div>
     </li>
     <li>
-      <img src="static/images/content-imgs/hero-img-4.jpg"> <!-- random image -->
+      <img src="static/images/content-imgs/hero-img-4.jpg"> <!-- image -->
       <div class="caption center-align">
         <h3>Welcome to Coimbra Travels!</h3>
         <h5 class="light grey-text text-lighten-3">Don't forget to sign up.</h5>
@@ -55,8 +55,9 @@
             class="fa fa-window-close grey-text-darken-4"></i></span>
         <p>{{ place.description }}</p>
         <p><em>Created by: {{ place.created_by }}</em></p>
-        <a href="" class="btn-small black">Done</a>
+        {% if session.user|lower == place.created_by|lower %}
         <a href="{{ url_for('edit_place', place_id=place._id) }}" class="btn-small black">Edit</a>
+        {% endif %}
       </div>
     </div>
   </div>

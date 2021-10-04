@@ -8,7 +8,6 @@ from werkzeug.security import generate_password_hash, check_password_hash
 if os.path.exists("env.py"):
     import env
 
-
 app = Flask(__name__)
 
 app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
@@ -114,10 +113,21 @@ def add_places():
 
 @app.route("/edit_place/<place_id>", methods=["GET", "POST"])
 def edit_place(place_id):
-    place = mongo.db.places.find_one({"_id": ObjectId(place_id)})
+    submit = {
+        "category_name": request.form.get("category_name"),
+        "location": request.form.get("location"),
+        "image_url": request.form.get("image_url"),
+        "description": request.form.get("description"),
+        "place_name": request.form.get("place_name"),
+        "date": request.form.get("date"),
+        "created_by": session["user"]
+    }
+    if request.method == "POST":
+        mongo.db.places.update({"_id": ObjectId(place_id)}, submit)
+        flash("Place Successfully Updated")
+    place = mongo.db.places.find_one({"_id": ObjectId(place_id)})    
     categories = mongo.db.categories.find().sort("category_name", 1)
-    return render_template(
-        "edit_place.html", place=place, categories=categories)
+    return render_template("edit_place.html", place=place, categories=categories)
 
 
 if __name__ == "__main__":
