@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h3 class="center-align">Add Places</h3>
+
+<div class="row">
+    <form class="col s12 white" method="POST" action="{{ url_for('add_places') }}">
+        <!--Category selector-->
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fa fa-list prefix grey-text-darken-4 "></i>
+                <select id="category_name" name="category_name" class="validate" required multiple>
+                  <option value="" disabled selected>Choose place's category</option>
+                  {% for category in categories %}
+                  <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                  {% endfor %}
+                </select>
+                <label for="category_name"></label>
+              </div>
+        </div>
+        <!--Place Name-->
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fa fa-building prefix grey-text-darken-4"></i>
+                <input id="place_name" name="place_name" minlength="3" maxlength="50" type="text" class="validate"
+                    required>
+                <label for="place_name">Name of Place</label>
+            </div>
+        </div>
+        <!--Place Description-->
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-align-left prefix grey-text-darken-4 "></i>
+                <textarea id="description" name="description" minlength="10" maxlength="200"
+                    class="materialize-textarea validate" required></textarea>
+                <label for="description">Description of the place</label>
+            </div>
+        </div>
+        <!--Location input-->
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fa fa-map-marker prefix grey-text-darken-4 "></i>
+                <textarea id="location" name="location" minlength="10" maxlength="200"
+                    class="materialize-textarea validate" required></textarea>
+                <label for="location">Location/Street Name</label>
+            </div>
+        </div>
+        <!--Image Url input-->
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-images prefix grey-text-darken-4 "></i>
+               <input id="image_url" name="image_url" type="url" aria-describedby="image_url"
+                  class="validate"></input>
+               <label for="image_url">Copy/Paste Image URL</label>
+            </div>
+         </div>
+         <!--date picker-->
+         <div class="row">
+            <div class="input-field col s12">
+                <i class="fa fa-calendar-alt prefix grey-text-darken-4"></i>
+                <input id="date" name="date" type="text" class="datepicker validate"
+                    required>
+                <label for="date">Date</label>
+            </div>
+        </div>
+        <!--Submit Button-->
+        <div class="row">
+            <div class="col s12 center-align">
+                <button type="submit" class="btn-large black">Add Place</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+{% endblock %}
