@@ -3,23 +3,55 @@
 }
 
 .brand-logo {
-    font-family: 'Scheherazade New', serif;
+    font-family: 'Special Elite', cursive;
+}
+
+h1{
+    font-family: 'Special Elite', cursive;
+}
+
+h2{
+    font-family: 'Special Elite', cursive;
 }
 
 h3 {
-    font-family: 'Scheherazade New', serif;
+    font-family: 'Special Elite', cursive;
     color: white;
 }
 
 h4{
-    font-family: 'Scheherazade New', serif;  
+    font-family: 'Special Elite', cursive; 
+}
+
+h5{
+    font-family: 'Special Elite', cursive;
+}
+
+h6 {
+    font-family: 'Special Elite', cursive;
+}
+span{
+    font-family: 'Special Elite', cursive;
+}
+
+button{
+    font-family: 'Special Elite', cursive;
+}
+
+a{
+    font-family: 'Special Elite', cursive;
+}
+label{
+    font-family: 'Special Elite', cursive;
 }
 
 body{
     background-color: #212121;
 }
 
-
+p {
+    font-family: 'Special Elite', cursive;
+}
 
 
 .top-left {
