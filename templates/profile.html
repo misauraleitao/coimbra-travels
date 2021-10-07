@@ -14,11 +14,17 @@
                     I wish you the best on your travels and in the mean time, you can watch this special welcoming video underneath.
                 </p>
                 <br>
+                <div class="center-align">
+                    <a href="{{ url_for('add_places') }}" class="black btn-large">Add A New Place</a>
+                    <a href="{{ url_for('logout') }}" class="red btn-large">Log out</a>
+                </div>
+                <br>
                 <div class="video-container">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/XwtpEG38JdA?&autoplay=1"
                         title="YouTube video player" frameborder="0"
                         
-                        allowfullscreen></iframe>
+                        allowfullscreen>
+                    </iframe>
                 </div>
             </div>
         </div>
