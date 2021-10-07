@@ -1,10 +1,11 @@
-# Coimbra Travels <img src="static/images/logo-image/coimbra-travels-logo.png" alt="coimbra-travels-logo" width="50" height="50">
+# Coimbra Travels 
+<img src="static/images/deployment-images/Screenshot (12).png" alt="amiresponsive" width="900" height="500">
 
 
 Coimbra Travels is a fully responsive application targeting Coimbra city travellers allowing them to view and create posts of various places in the city.
 This application will be useful to the users as they can plan their itinerary to their liking, and/or they can add places that they have visited that are not yet listed in the app so that other users can also plan ahead.
 
-`Here will be an image of responsive app` \
+
 Deployed Link : (https://coimbra-travels.herokuapp.com/)
 
 
