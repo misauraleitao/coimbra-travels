@@ -8,6 +8,22 @@ This application will be useful to the users as they can plan their itinerary to
 
 Deployed Link : (https://coimbra-travels.herokuapp.com/)
 
+## Table of Contents
+ 
+
+  - [User Experience (UX)](#UX-User-Experience)
+  - [User Stories](#User-Stories)
+  - [UI](#UI-User-Interface)
+  - [Design](#Web-Design)
+  - [Wireframes](#Wireframes)
+  - [Features](#Features)
+  - [Future Features](#Future-Features)
+  - [Technology](#Technology)
+  - [Deployment to Heroku](#Deployment-to-Heroku)
+  - [Testing](#Testing)
+  - [Credits](#Credits)
+  - [Thank You to :](#Thank-You-to-:)
+
 # UX User Experience
 
 ## User Stories
@@ -74,7 +90,9 @@ In order to make the web page secured passwords are also hashed, meaning they ar
 1. Add email to register and reset password feature on log in in case the user has forgotten their password.
 2. Add a profile picture option on profile, meaning the user could upload their profile picture from their computer files.
 
-# Technology and Resources Used for this project :
+# Technology
+
+Theese are what I used for this project.
 
 1. HTML5 
 2. CSS3
@@ -102,7 +120,7 @@ In order to make the web page secured passwords are also hashed, meaning they ar
 
 
 
-## Deployment to Heroku
+# Deployment to Heroku
 
 
 Here are the steps that I took to deploy my application to Heroku:
@@ -170,7 +188,40 @@ I have made sure I went through the measurements of self testing this web app on
 - safari (iphone x): all working and responsive I am able to create an account, edit, create and delete posts aswel as using the search bar.
 - dell laptop: all working- this was the laptop I have used for my project so results were consistent.
 - microsoft edge: all working fine.
-- opera: all working fine 
+- opera: all working fine.
+
+### To test the web app theese were the steps :
+
+1. nagivate to the web page and scroll to see content. click on the content and see the displayed description, making sure there are no buttons for me to see as I have not
+created an account.
+2. trying out the search bar to see if it picks up the keywords and seeing if the reset function is available and works.
+3. Proceed to Creating an account. Checking all validators seeing if they work.
+4. I can see it took me straight to the profile page and flash messages are appearing I will check these as they appear for other functions on the web page too.
+5. Checking to see if there are more options on the nav bar, if admin there should also be a manage category link. 
+6. Create a new place, checking to see all validators, dropdown picker and calendar all work fine.
+7. Return to the home page automatically seeing my post on there.
+8. Clicked the post and checking if the edit, delete buttons work.
+9. Log out.
+10. Log in.
+11. Constantly checking the database and seeing that things are being added to it.
+
+# Credits 
+
+All images were found on google-images.
+I used the course work to help me through the project and create my own.
+Materialize CSS was used to build this page.
+Various youtube videos were also watched to understand the concept more.
+
+
+# Thank You to :
+
+- Family and Friends who supported me and helped me test this webpage
+- Code Institute for having amazing content
+- Everyone on Slack for their support.
+
+[Back to top ↑](#Coimbra-Travels)
+
+
 
 
 
