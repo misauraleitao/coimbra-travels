@@ -153,4 +153,23 @@ I then selected the region section dropdown of `europe` as that is where I am lo
 
 <img src="static/images/deployment-images/Screenshot (14).png" alt="screenshot" width="700" height="350">
 
-3. 
+3. HTML Validator (Nu)- 1 warning
+
+<img src="static/images/deployment-images/Screenshot (15).png" alt="screenshot" width="700" height="350">
+
+4. CSS validator (jigsaw) - no errors on CSS static file
+
+<img src="static/images/deployment-images/Screenshot (16).png" alt="screenshot" width="700" height="350">
+
+## Testing Manually
+
+I have made sure I went through the measurements of self testing this web app on the following:
+
+- google chrome: no issues found and web page is fully responsive and working.
+- google dev tools: all pages are responsive and all links, buttons and forms work correctly. I tested this on all devices available on dev tools.
+- safari (iphone x): all working and responsive I am able to create an account, edit, create and delete posts aswel as using the search bar.
+- dell laptop: all working- this was the laptop I have used for my project so results were consistent.
+- microsoft edge: 
+
+
+

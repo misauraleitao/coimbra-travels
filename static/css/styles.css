@@ -6,11 +6,11 @@
     font-family: 'Special Elite', cursive;
 }
 
-h1{
+h1 {
     font-family: 'Special Elite', cursive;
 }
 
-h2{
+h2 {
     font-family: 'Special Elite', cursive;
 }
 
@@ -19,33 +19,35 @@ h3 {
     color: white;
 }
 
-h4{
-    font-family: 'Special Elite', cursive; 
+h4 {
+    font-family: 'Special Elite', cursive;
 }
 
-h5{
+h5 {
     font-family: 'Special Elite', cursive;
 }
 
 h6 {
     font-family: 'Special Elite', cursive;
 }
-span{
+
+span {
     font-family: 'Special Elite', cursive;
 }
 
-button{
+button {
     font-family: 'Special Elite', cursive;
 }
 
-a{
-    font-family: 'Special Elite', cursive;
-}
-label{
+a {
     font-family: 'Special Elite', cursive;
 }
 
-body{
+label {
+    font-family: 'Special Elite', cursive;
+}
+
+body {
     background-color: #212121;
 }
 
@@ -58,17 +60,13 @@ p {
     position: absolute;
     top: 600px;
     left: 16px;
-  }
+}
 
 .flashes h4 {
     line-height: 2;
     color: white;
 }
 
-.one div {
-    background-image: url(../static/images/content-imgs/jardim-da-sereia.jpg);
-}
-
-.slider img{
+.slider img {
     filter: brightness(0.6) grayscale(1) saturate(3) contrast(1.1);
-  }
+}
