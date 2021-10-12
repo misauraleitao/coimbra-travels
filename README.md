@@ -169,7 +169,8 @@ I have made sure I went through the measurements of self testing this web app on
 - google dev tools: all pages are responsive and all links, buttons and forms work correctly. I tested this on all devices available on dev tools.
 - safari (iphone x): all working and responsive I am able to create an account, edit, create and delete posts aswel as using the search bar.
 - dell laptop: all working- this was the laptop I have used for my project so results were consistent.
-- microsoft edge: all working fine. 
+- microsoft edge: all working fine.
+- opera: all working fine 
 
 
 
