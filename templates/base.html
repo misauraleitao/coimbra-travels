@@ -45,7 +45,7 @@
 
     <!--mobile side-nav-->
     <ul class="sidenav" id="mobile-demo">
-      <p class="black-text center-align">Coimbra Travels</p>
+      <li class="black-text center-align">Coimbra Travels</li>
       <li><a href="{{ url_for('get_places') }}">Home</a></li>
       {% if session.user %}
       <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
