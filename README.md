@@ -145,4 +145,7 @@ I then selected the region section dropdown of `europe` as that is where I am lo
 
 # Testing
 
+1. Pep8 - No errors, 2 warnings
+
+<img src="static/images/deployment-images/Screenshot (13).png" alt="screenshot" width="700" height="350">
 

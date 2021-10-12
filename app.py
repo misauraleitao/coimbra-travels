@@ -65,7 +65,7 @@ def login():
         if existing_user:
             # ensure hashed password matches user input
             if check_password_hash(
-                existing_user["password"], request.form.get("password")):
+              existing_user["password"], request.form.get("password")):
                     session["user"] = request.form.get("username").lower()
                     flash("Welcome, {}".format(
                         request.form.get("username")))
@@ -83,11 +83,12 @@ def login():
 
     return render_template("login.html")
 
+
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
     # grab the users username from mongo
     username = mongo.db.users.find_one(
-        {"username": session["user"]}) ["username"]
+        {"username": session["user"]})["username"]
     return render_template("profile.html", username=username)
 
 
@@ -132,7 +133,7 @@ def edit_place(place_id):
     if request.method == "POST":
         mongo.db.places.update({"_id": ObjectId(place_id)}, submit)
         flash("Place Successfully Updated")
-    place = mongo.db.places.find_one({"_id": ObjectId(place_id)})    
+    place = mongo.db.places.find_one({"_id": ObjectId(place_id)})   
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template(
         "edit_place.html", place=place, categories=categories)
