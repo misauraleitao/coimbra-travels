@@ -8,6 +8,98 @@ This application will be useful to the users as they can plan their itinerary to
 
 Deployed Link : (https://coimbra-travels.herokuapp.com/)
 
+# UX User Experience
+
+## User Stories
+
+### As a first time user :
+1. Be able to see and browse places already logged on the app.
+2. Be able to search for existing places and read their specification
+3. Be able to register to the app.
+4. Be able to add, edit and delete my own posts.
+
+### As a returning user :
+1. Log in to my existing account.
+2. Log out of my existing account.
+3. Be able to access my profile.
+
+### As the Admin user :
+1. Be able to manipulate categories, to add, edit and delete them.
+2. Ensure that the website is simple and easy to navigate for all users.
+3. Make sure that users can log in and log out of their account and have suitable content on their profile
+4. Make sure that users can add new content at all times.
+5. Providing a secure way of registering.
+6. Users have to be able to edit and delete their content at all times whenever they feel like.
+
+# UI User Interface
+
+1. Responsive application on all devices.
+2. Two diferent nav bars to provide a better experience and design.
+3. Forms to create a new place and form to edit the existing places.
+4. Keyword based search bar.
+4. Two buttons on Place's card one to edit the other to delete.
+5. Registration/Log In forms.
+6. Log Out Nav Bar functionality.
+
+# Web Design
+
+I wanted the main theme to be dark with an old feel, as Coimbra is one of the oldest cities in the country with a lot of dark and
+medieval stories and look. 
+I opted for a black background with a type of typo caligraphy to infuse that feel and aesthetic.
+I also made sure the carousel images were black and white and were all images of old and historical buildings.
+For the buttons I kept their usual black colour unless if it was a "danger" type button like for example the delete action where I have made them 
+red so that they stand out to the user.
+The Cards are simple and I have decided to display three in a row as it makes the images bigger and easier to see and the card only displays the catagory,
+location, date and it has a title of the place. If users wish to view more they can simply click the caret icon to view its description. This helps the overall
+look of the website and makes it more interactive.
+
+# Wireframes
+
+All wireframes were made by hand on paper.
+
+
+# Features
+
+1. Caroussel: Materialize Caroussel for design and to beautify the web app.
+2. Adding a new place: Existing user can add a new place
+3. Editing a place: For user to be able to edit a place that they have created.
+4. Register: First time user can create an account in order to add new places that they have visited.
+5. Delete: Functions and buttons so that users can delete places that they have created.
+6. Search Bar: Users can search places by typing Keyword.
+7. Security: User validation is checked to see if Username already exists in the database. If so, they will be notified.
+In order to make the web page secured passwords are also hashed, meaning they are encripted prior to being stored in the database.
+
+# Future Features
+
+1. Add email to register and reset password feature on log in in case the user has forgotten their password.
+2. Add a profile picture option on profile, meaning the user could upload their profile picture from their computer files.
+
+# Technology and Resources Used for this project :
+
+1. HTML5 
+2. CSS3
+3. JQuery
+4. Markdown Lang
+5. Git
+6. GitHub
+7. GitPod
+8. Heroku
+9. MongoDB
+10. Flask
+11. Chrome DEV tools
+12. Materialize
+13. Font Awesome
+14. AMiResponsive
+15. Youtube
+16. Course work and lessons- Code Institute
+17. Slack 
+18. Google Images
+19. Canva 
+20. Adobe Sparks
+21. StackOverFlow
+22. Python
+23. Werkzeug
+
 
 
 ## Deployment to Heroku
@@ -49,4 +141,8 @@ I then selected the region section dropdown of `europe` as that is where I am lo
 
 9. After clicking that I know that my application has been deployed and I can view it. As of now, any coded pushed to GitHub will now automaticly add to my deployed application.
 <img src="static/images/deployment-images/Screenshot (10).png" alt="screenshot" width="700" height="350">
+
+
+# Testing
+
 
