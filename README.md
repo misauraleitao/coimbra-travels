@@ -16,10 +16,13 @@ Deployed Link : (https://coimbra-travels.herokuapp.com/)
   - [UI](#UI-User-Interface)
   - [Design](#Web-Design)
   - [Wireframes](#Wireframes)
+  - [Data](#Data)
   - [Features](#Features)
   - [Future Features](#Future-Features)
   - [Technology](#Technology)
   - [Deployment to Heroku](#Deployment-to-Heroku)
+  - [Forking](#Forking)
+  - [Local Clone](#Local-Clone)
   - [Testing](#Testing)
   - [Credits](#Credits)
   - [Thank You to :](#Thank-You-to-:)
@@ -71,7 +74,27 @@ look of the website and makes it more interactive.
 
 # Wireframes
 
-All wireframes were made by hand on paper.
+All wireframes were made by hand on paper to give me an exact idea how the webpage would be layed out and where to place content.
+
+<img src="static/images/deployment-images/wireframe1.jpg" alt="screenshot" width="700" height="350">
+
+<img src="static/images/deployment-images/wireframe2.jpg" alt="screenshot" width="700" height="350">
+
+<img src="static/images/deployment-images/wireframe3.jpg" alt="screenshot" width="700" height="350">
+
+<img src="static/images/deployment-images/wireframe4.jpg" alt="screenshot" width="700" height="350">
+
+<img src="static/images/deployment-images/wireframe5.jpg" alt="screenshot" width="700" height="350">
+
+<img src="static/images/deployment-images/wireframe6.jpg" alt="screenshot" width="700" height="350">
+
+<img src="static/images/deployment-images/wireframe7.jpg" alt="screenshot" width="700" height="350">
+
+# Data
+
+This is a hand drawn model of my data I designed so that I had an idea of what collections to create in order for my web page to store data effectivelly.
+
+<img src="static/images/deployment-images/data.jpg" alt="screenshot" width="700" height="350">
 
 
 # Features
@@ -159,6 +182,29 @@ I then selected the region section dropdown of `europe` as that is where I am lo
 
 9. After clicking that I know that my application has been deployed and I can view it. As of now, any coded pushed to GitHub will now automaticly add to my deployed application.
 <img src="static/images/deployment-images/Screenshot (10).png" alt="screenshot" width="700" height="350">
+
+# Forking
+
+By forking the GitHub Repository, you can make a copy of the original repository in your own GitHub account. This means we can view or make changes without making the changes affecting the original.
+Here are the steps to follow to do this:
+- Login Github.
+- Locate the repository.
+- Once you have located it, you'll see the `Fork` button on the right hand side.
+- This will create a copy in the personal repository.
+- Return to original repository and press `New Pull Request` to request your changes to be merged into the original project.
+
+# Local Clone
+
+- Log in to Github and locate the chosen repository
+- Click `Code`
+- Select HTTPS: and copy the link given.
+- Open Bash 
+- You will want to change the current working directory to the location you want the clone to be made.
+- Command `git clone  https://github.com/YOUR-USERNAME/YOUR-REPOSITORY`
+- Your local clone is now created.
+
+
+
 
 
 # Testing
